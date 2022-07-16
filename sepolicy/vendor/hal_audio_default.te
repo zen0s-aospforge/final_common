@@ -13,3 +13,5 @@ allow hal_audio_default system_suspend_hwservice:hwservice_manager find;
 
 # Allow binder calls from audio hal to system app
 binder_call(hal_audio_default, system_app)
+
+get_prop(hal_audio_default, boot_status_prop)
