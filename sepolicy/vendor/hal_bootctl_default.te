@@ -1,0 +1,2 @@
+# Allow binder calls from boot ctl to system app
+binder_call(hal_bootctl_default, system_app)

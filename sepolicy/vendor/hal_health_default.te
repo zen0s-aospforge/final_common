@@ -1,3 +1,6 @@
 # Access to sysfs wakeup files
 allow hal_health_default sysfs_wakeup:dir r_dir_perms;
 allow hal_health_default sysfs_wakeup:file r_file_perms;
+
+# Allow binder calls from health hal to system app
+binder_call(hal_health_default, system_app)

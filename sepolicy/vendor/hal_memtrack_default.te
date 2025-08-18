@@ -1,0 +1,2 @@
+# Allow binder calls from power hal to system app
+binder_call(hal_power_default, system_app)
