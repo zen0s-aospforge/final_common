@@ -118,6 +118,9 @@ override KERNEL_TOOLCHAIN_PREFIX_arm := arm-linux-android-
 # Media
 TARGET_USES_ION := true
 
+# Properties
+TARGET_SYSTEM_PROP += device/xiaomi/alioth/system.prop
+
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 262144 # (BOARD_KERNEL_PAGESIZE * 64)
 ifeq ($(TARGET_IS_VAB),true)
